@@ -44,7 +44,7 @@ HTML5 <video> element helps browsers to load Video from server with lesser effor
 
 Below command converts to .mp4 files:
 
-   ffmpeg -threads 4 -i input_video.mts -i_qfactor 0.71 -qcomp 0.6
+            ffmpeg -threads 4 -i input_video.mts -i_qfactor 0.71 -qcomp 0.6
             -qmin 10 -qmax 63 -qdiff 4 -trellis 0 -vcodec libx264 
             -s 640x360 -b:v 1000k -b:a 56k -ar 22050 output_video.mp4
 
